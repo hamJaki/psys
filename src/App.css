@@ -1,42 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* 1. Import the pixel font from Google Fonts using @import */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* 2. Basic Reset & Page Background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 3. App Container */
+.app-container {
   text-align: center;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* 4. Apply the Pixel Font throughout */
+.pixel-text {
+  font-family: 'Press Start 2P', cursive;
+  color: #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
+/* 5. Card for Content */
 .card {
-  padding: 2em;
+  background-color: #ffffffcc;
+  border: 2px dashed #9e9e9e;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
 }
 
-.read-the-docs {
-  color: #888;
+/* 6. Relax Button Styling */
+.relax-button {
+  background-color: #b2ebf2;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.relax-button:hover {
+  background-color: #80deea;
+}
+
+/* 7. Footer Text */
+.footer-text {
+  color: #4e4e4e;
 }
